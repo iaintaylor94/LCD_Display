@@ -37,9 +37,9 @@ int main() {
   // get input
   struct input instance = get_input();
   // print input
-  std::cout << instance.size << "  " << instance.number << std::endl;
+  std::cout << instance.size << "  " << instance.number << "  " << instance.length << std::endl;
 
-  //Works up to here!!!!!!!!!!!!!!!!!!
+
   
   // separate input
   int inputArray[8];
@@ -89,6 +89,7 @@ int main() {
       int length = 0;
       while (number != 0) {
         length ++;
+        number /= 10;
       }
       return length;
     }
