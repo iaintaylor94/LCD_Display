@@ -40,14 +40,17 @@ int main() {
   std::cout << instance.size << "  " << instance.number << "  " << instance.length << std::endl;
 
 
-  // separate input
-  int inputArray[8];
+  // separate input 
+  int inputArray[instance.size];
   get_digits(instance.number, &inputArray[0]);
   
   
-  //Print inputArray[]
-  for (int i = 0; i < instance.length; i++)
+  //print get_digits
+  for (int i = 0; i < instance.length; i++) {
     std::cout << inputArray[i];
+  }
+  std::cout << std::endl;
+  
 
   return 0;
 }
