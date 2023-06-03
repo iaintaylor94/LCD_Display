@@ -46,8 +46,7 @@ int main() {
   
   
   //print get_digits
-  //for (int i = 0; i <= instance.size; i++) {
-  for (int i = instance.size + 1; i >= 0; i--) {
+  for (int i = 0; i < instance.length; i++) {
     std::cout << inputArray[i];
   }
   std::cout << std::endl;
