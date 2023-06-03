@@ -40,14 +40,10 @@ int main() {
   std::cout << instance.size << "  " << instance.number << "  " << instance.length << std::endl;
 
 
-  
   // separate input
   int inputArray[8];
   get_digits(instance.number, &inputArray[0]);
   
-  //Print size of instance.number
-  instance.length = findLength(instance.number);
-  std::cout << "INSTANCE LENGTH = " << instance.length;
   
   //Print inputArray[]
   for (int i = 0; i < instance.length; i++)
