@@ -58,6 +58,10 @@ int main() {
   if (totalWidth >= 80) {
     std::cout << "Output text string is too wide (" << totalWidth << ") use smaller font size or shorter number" << std::endl;
   }
+  std::cout << totalWidth << std::endl;
+
+  //Create the output array
+  char output[totalWidth + 1][2 * instance.size + 3];
   
   
 
