@@ -50,6 +50,15 @@ int main() {
     std::cout << inputArray[i];
   }
   std::cout << std::endl;
+
+
+
+  //Test output length (<80 chars)
+  int totalWidth = (instance.size +3) * instance.length - 1;
+  if (totalWidth >= 80) {
+    std::cout << "Output text string is too wide (" << totalWidth << ") use smaller font size or shorter number" << std::endl;
+  }
+  
   
 
   return 0;
