@@ -60,7 +60,7 @@ int main() {
   }
   std::cout << totalWidth << std::endl;
 
-  //Create the output array
+  //Create the output array 
   char output[totalWidth + 1][2 * instance.size + 3];
   
   
