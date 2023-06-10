@@ -24,11 +24,17 @@ struct lines1 {
       int length;
       };
 
+
 //Declerations
   //Fuctions
   input get_input(void);
   void get_digits(int number, int array[]);
   int findLength(int number);
+  int createA (int size, char A[]);
+  int createB (int size, char B[]);
+  int createC (int size, char C[]);
+  int createD (int size, char D[]);
+  int createE (int size, char E[]);
 
 
 
@@ -50,6 +56,17 @@ int main() {
     std::cout << inputArray[i];
   }
   std::cout << std::endl;
+
+
+  //Create digit array
+  int numDigits = 10;
+  int digitWidth = instance.size + 3;
+  int digitHeight = 2 * instance.size + 3;
+  char digit [numDigits][digitWidth][digitHeight];
+
+
+
+  
 
 
 
