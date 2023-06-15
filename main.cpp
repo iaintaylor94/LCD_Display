@@ -84,6 +84,7 @@ int main() {
   createC(instance.fontSize, rowC);
   createD(instance.fontSize, rowD);
   createE(instance.fontSize, rowE);
+  
 
   //test createA
   std::cout << "rowA: '";
