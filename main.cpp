@@ -2,18 +2,6 @@
 
 #include <iostream>
 
-// Define horizontal lines structure <size + 2> 1-10
-#include "linestructs.h"
-/*  Example
-struct lines1 {
-  char A[3] = {' ', '-', ' '};
-  char B[3] = {' ', ' ', '|'};
-  char C[3] = {'|', ' ', ' '};
-  char D[3] = {'|', ' ', '|'};
-  char E[3] = {' ', ' ', ' '};
-} size1;
-*/
-
 
 //Definitions
   //Structs
