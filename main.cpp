@@ -121,17 +121,431 @@ int main() {
   }
   std::cout << "'" << std::endl;
     std::cout << std::endl;
-  
 
+  
+  // Create digit arrays
+  std::cout << "Digit height: " << digitHeight << std::endl;
+  std::cout << "Digit width: " << digitWidth << std::endl << std::endl;
+  
+  int top = 0;
+  int middle = (digitHeight - 1) / 2;
+  int bottom = digitHeight - 1;
+
+  int digitID;
+  
+  // Create digit '0' {A D E D A}
+  // A
+  digitID = 0;
+  for (int i = 0; i < digitWidth; i++) {
+    digit [digitID][i][top] = rowA[i];
+  }
+  // D
+  for (int i = top + 1; i < middle; i++) {
+    for (int j = 0; j < digitWidth; j++) {
+      digit[digitID][j][i] = rowD[j];
+    }
+  }
+  // E
+  for (int i = 0; i < digitWidth; i++) {
+    digit[digitID][i][middle] = rowE[i];
+  }
+  // D
+  for (int i = middle + 1; i < bottom; i++) {
+    for (int j = 0; j < digitWidth; j++) {
+      digit[digitID][j][i] = rowD[j];
+    }
+  }
+  // A
+  for (int i = 0; i < digitWidth; i++) {
+    digit[digitID][i][bottom] = rowA[i];
+  }
+
+  // Test digit 0
+  std::cout << "Digit 0: " << std::endl;
+  for (int i = 0; i < digitHeight; i++) {
+    std::cout << "Row " << i << ":  ";
+    for (int j = 0; j < digitWidth; j++) {
+      std::cout << digit[digitID][j][i];
+    }
+    std::cout << std::endl;
+  }
+  std::cout << std::endl;
+
+
+  // Create digit '1' {E B E B E}
+  // E
+  digitID = 1;
+  for (int i = 0; i < digitWidth; i++) {
+    digit [digitID][i][top] = rowE[i];
+  }
+  // B
+  for (int i = top + 1; i < middle; i++) {
+    for (int j = 0; j < digitWidth; j++) {
+      digit[digitID][j][i] = rowB[j];
+    }
+  }
+  // E
+  for (int i = 0; i < digitWidth; i++) {
+    digit[digitID][i][middle] = rowE[i];
+  }
+  // B
+  for (int i = middle + 1; i < bottom; i++) {
+    for (int j = 0; j < digitWidth; j++) {
+      digit[digitID][j][i] = rowB[j];
+    }
+  }
+  // E
+  for (int i = 0; i < digitWidth; i++) {
+    digit[digitID][i][bottom] = rowE[i];
+  }
+
+  // Test digit 1
+  std::cout << "Digit 1: " << std::endl;
+  for (int i = 0; i < digitHeight; i++) {
+    std::cout << "Row " << i << ":  ";
+    for (int j = 0; j < digitWidth; j++) {
+      std::cout << digit[digitID][j][i];
+    }
+    std::cout << std::endl;
+  }
+  std::cout << std::endl;
+
+
+  // Create digit '2' {A B A C A}
+  // A
+  digitID = 2;
+  for (int i = 0; i < digitWidth; i++) {
+    digit [digitID][i][top] = rowA[i];
+  }
+  // B
+  for (int i = top + 1; i < middle; i++) {
+    for (int j = 0; j < digitWidth; j++) {
+      digit[digitID][j][i] = rowB[j];
+    }
+  }
+  // A
+  for (int i = 0; i < digitWidth; i++) {
+    digit[digitID][i][middle] = rowA[i];
+  }
+  // C
+  for (int i = middle + 1; i < bottom; i++) {
+    for (int j = 0; j < digitWidth; j++) {
+      digit[digitID][j][i] = rowC[j];
+    }
+  }
+  // C
+  for (int i = 0; i < digitWidth; i++) {
+    digit[digitID][i][bottom] = rowA[i];
+  }
+
+  // Test digit 2
+  std::cout << "Digit 2: " << std::endl;
+  for (int i = 0; i < digitHeight; i++) {
+    std::cout << "Row " << i << ":  ";
+    for (int j = 0; j < digitWidth; j++) {
+      std::cout << digit[digitID][j][i];
+    }
+    std::cout << std::endl;
+  }
+  std::cout << std::endl;
+
+  
+  // Create digit '3' {A B A B A}
+  // A
+  digitID = 3;
+  for (int i = 0; i < digitWidth; i++) {
+    digit [digitID][i][top] = rowA[i];
+  }
+  // B
+  for (int i = top + 1; i < middle; i++) {
+    for (int j = 0; j < digitWidth; j++) {
+      digit[digitID][j][i] = rowB[j];
+    }
+  }
+  // A
+  for (int i = 0; i < digitWidth; i++) {
+    digit[digitID][i][middle] = rowA[i];
+  }
+  // B
+  for (int i = middle + 1; i < bottom; i++) {
+    for (int j = 0; j < digitWidth; j++) {
+      digit[digitID][j][i] = rowB[j];
+    }
+  }
+  // A
+  for (int i = 0; i < digitWidth; i++) {
+    digit[digitID][i][bottom] = rowA[i];
+  }
+
+  // Test digit 3
+  std::cout << "Digit 3: " << std::endl;
+  for (int i = 0; i < digitHeight; i++) {
+    std::cout << "Row " << i << ":  ";
+    for (int j = 0; j < digitWidth; j++) {
+      std::cout << digit[digitID][j][i];
+    }
+    std::cout << std::endl;
+  }
+  std::cout << std::endl;
+
+
+  // Create digit '4' {E D A B E}
+  // E
+  digitID = 4;
+  for (int i = 0; i < digitWidth; i++) {
+    digit [digitID][i][top] = rowE[i];
+  }
+  // D
+  for (int i = top + 1; i < middle; i++) {
+    for (int j = 0; j < digitWidth; j++) {
+      digit[digitID][j][i] = rowD[j];
+    }
+  }
+  // A
+  for (int i = 0; i < digitWidth; i++) {
+    digit[digitID][i][middle] = rowA[i];
+  }
+  // B
+  for (int i = middle + 1; i < bottom; i++) {
+    for (int j = 0; j < digitWidth; j++) {
+      digit[digitID][j][i] = rowB[j];
+    }
+  }
+  // E
+  for (int i = 0; i < digitWidth; i++) {
+    digit[digitID][i][bottom] = rowE[i];
+  }
+
+  // Test digit 4
+  std::cout << "Digit 4: " << std::endl;
+  for (int i = 0; i < digitHeight; i++) {
+    std::cout << "Row " << i << ":  ";
+    for (int j = 0; j < digitWidth; j++) {
+      std::cout << digit[digitID][j][i];
+    }
+    std::cout << std::endl;
+  }
+  std::cout << std::endl;
+
+
+  // Create digit '5' {A C A B A}
+  // A
+  digitID = 5;
+  for (int i = 0; i < digitWidth; i++) {
+    digit [digitID][i][top] = rowA[i];
+  }
+  // C
+  for (int i = top + 1; i < middle; i++) {
+    for (int j = 0; j < digitWidth; j++) {
+      digit[digitID][j][i] = rowC[j];
+    }
+  }
+  // A
+  for (int i = 0; i < digitWidth; i++) {
+    digit[digitID][i][middle] = rowA[i];
+  }
+  // B
+  for (int i = middle + 1; i < bottom; i++) {
+    for (int j = 0; j < digitWidth; j++) {
+      digit[digitID][j][i] = rowB[j];
+    }
+  }
+  // A
+  for (int i = 0; i < digitWidth; i++) {
+    digit[digitID][i][bottom] = rowA[i];
+  }
+
+  // Test digit 5
+  std::cout << "Digit 5: " << std::endl;
+  for (int i = 0; i < digitHeight; i++) {
+    std::cout << "Row " << i << ":  ";
+    for (int j = 0; j < digitWidth; j++) {
+      std::cout << digit[digitID][j][i];
+    }
+    std::cout << std::endl;
+  }
+  std::cout << std::endl;
+
+
+  // Create digit '6' {A C A D A}
+  // A
+  digitID = 6;
+  for (int i = 0; i < digitWidth; i++) {
+    digit [digitID][i][top] = rowA[i];
+  }
+  // C
+  for (int i = top + 1; i < middle; i++) {
+    for (int j = 0; j < digitWidth; j++) {
+      digit[digitID][j][i] = rowC[j];
+    }
+  }
+  // A
+  for (int i = 0; i < digitWidth; i++) {
+    digit[digitID][i][middle] = rowA[i];
+  }
+  // D
+  for (int i = middle + 1; i < bottom; i++) {
+    for (int j = 0; j < digitWidth; j++) {
+      digit[digitID][j][i] = rowD[j];
+    }
+  }
+  // A
+  for (int i = 0; i < digitWidth; i++) {
+    digit[digitID][i][bottom] = rowA[i];
+  }
+
+  // Test digit 6
+  std::cout << "Digit 6: " << std::endl;
+  for (int i = 0; i < digitHeight; i++) {
+    std::cout << "Row " << i << ":  ";
+    for (int j = 0; j < digitWidth; j++) {
+      std::cout << digit[digitID][j][i];
+    }
+    std::cout << std::endl;
+  }
+  std::cout << std::endl;
+
+
+  // Create digit '7' {A B E B E}
+  // A
+  digitID = 7;
+  for (int i = 0; i < digitWidth; i++) {
+    digit [digitID][i][top] = rowA[i];
+  }
+  // B
+  for (int i = top + 1; i < middle; i++) {
+    for (int j = 0; j < digitWidth; j++) {
+      digit[digitID][j][i] = rowB[j];
+    }
+  }
+  // E
+  for (int i = 0; i < digitWidth; i++) {
+    digit[digitID][i][middle] = rowE[i];
+  }
+  // B
+  for (int i = middle + 1; i < bottom; i++) {
+    for (int j = 0; j < digitWidth; j++) {
+      digit[digitID][j][i] = rowB[j];
+    }
+  }
+  // E
+  for (int i = 0; i < digitWidth; i++) {
+    digit[digitID][i][bottom] = rowE[i];
+  }
+
+  // Test digit 7
+  std::cout << "Digit 7: " << std::endl;
+  for (int i = 0; i < digitHeight; i++) {
+    std::cout << "Row " << i << ":  ";
+    for (int j = 0; j < digitWidth; j++) {
+      std::cout << digit[digitID][j][i];
+    }
+    std::cout << std::endl;
+  }
+  std::cout << std::endl;
+
+
+  // Create digit '8' {A D A D A}
+  // A
+  digitID = 8;
+  for (int i = 0; i < digitWidth; i++) {
+    digit [digitID][i][top] = rowA[i];
+  }
+  // D
+  for (int i = top + 1; i < middle; i++) {
+    for (int j = 0; j < digitWidth; j++) {
+      digit[digitID][j][i] = rowD[j];
+    }
+  }
+  // A
+  for (int i = 0; i < digitWidth; i++) {
+    digit[digitID][i][middle] = rowA[i];
+  }
+  // D
+  for (int i = middle + 1; i < bottom; i++) {
+    for (int j = 0; j < digitWidth; j++) {
+      digit[digitID][j][i] = rowD[j];
+    }
+  }
+  // A
+  for (int i = 0; i < digitWidth; i++) {
+    digit[digitID][i][bottom] = rowA[i];
+  }
+
+  // Test digit 8
+  std::cout << "Digit 8: " << std::endl;
+  for (int i = 0; i < digitHeight; i++) {
+    std::cout << "Row " << i << ":  ";
+    for (int j = 0; j < digitWidth; j++) {
+      std::cout << digit[digitID][j][i];
+    }
+    std::cout << std::endl;
+  }
+  std::cout << std::endl;
+
+
+  // Create digit '9' {A D A B A}
+  // A
+  digitID = 9;
+  for (int i = 0; i < digitWidth; i++) {
+    digit [digitID][i][top] = rowA[i];
+  }
+  // D
+  for (int i = top + 1; i < middle; i++) {
+    for (int j = 0; j < digitWidth; j++) {
+      digit[digitID][j][i] = rowD[j];
+    }
+  }
+  // A
+  for (int i = 0; i < digitWidth; i++) {
+    digit[digitID][i][middle] = rowA[i];
+  }
+  // B
+  for (int i = middle + 1; i < bottom; i++) {
+    for (int j = 0; j < digitWidth; j++) {
+      digit[digitID][j][i] = rowB[j];
+    }
+  }
+  // A
+  for (int i = 0; i < digitWidth; i++) {
+    digit[digitID][i][bottom] = rowA[i];
+  }
+
+  // Test digit 9
+  std::cout << "Digit 9: " << std::endl;
+  for (int i = 0; i < digitHeight; i++) {
+    std::cout << "Row " << i << ":  ";
+    for (int j = 0; j < digitWidth; j++) {
+      std::cout << digit[digitID][j][i];
+    }
+    std::cout << std::endl;
+  }
+  std::cout << std::endl;
+
+  
   //Test output length (<80 chars)
-  int totalWidth = (instance.fontSize +3) * instance.length - 1;
+  int totalWidth = (digitWidth) * instance.length - 1;
   if (totalWidth >= 80) {
     std::cout << "Output text string is too wide (" << totalWidth << ") use smaller font size or shorter number" << std::endl;
   }
   std::cout << "Total width: "<< totalWidth << std::endl;
 
+
+
+
+
+
+  
+
   //Create the output array 
-  char output[totalWidth + 1][2 * instance.fontSize + 3];
+  char output[totalWidth + 1][digitHeight];
+
+
+
+
+
+
+  
   
   
 
